@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-comerce</title>
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediaQ.css">
+</head>
+<body>
+    <!--------------------- Nav --------------------->
+    <header>
+        <nav>
+            <div class="nav-flex">
+
+                <div class="container-title">
+                    
+                    <div class="logo-one left-mar">
+                        <button class="icon-nav direction direction-x" onclick="menuBtn()"><img src="./images/menu 2.svg" alt="icon-menu" class="icon-nav"></button>
+                        <div class="menu-list">
+                            <div class="menu-all hidden-four" id="menu-list">
+                                <button class="icon-nav direction direction-x" onclick="menuBtn()"><img src="./images/X_1.svg" class="icon-nav"></button>
+                                <p class="txt-filtros text-a-left bold">Menú</p>
+                                <a href="#" class="text-a-left"><p class="bttm-border txt-filtros padding-05">Samsung</p></a>
+                                <a href="#" class="text-a-left"><p class="bttm-border txt-filtros padding-05">Huawei</p></a>
+                                <a href="#" class="text-a-left"><p class="bttm-border txt-filtros padding-05">Xiaomi</p></a>
+                                <a href="#" class="text-a-left"><p class="bttm-border txt-filtros padding-05">Pixel</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-title">
+                        <h1 class="h1-small one left-mar-title">e-commerce</h1>
+                    </div>
+                </div>
+
+                <div class="container-icon"> 
+
+                    <div class="logo-user">
+                        <button class="icon-nav direction direction-x" onclick="loginBtn()"><img src="./images/user 2.svg" alt="icon-user" class="icon-nav"></button>
+                        <div class="user-login hidden-five" id="user-login">
+                            <button class="icon-nav direction direction-x" onclick="loginBtn()"><img src="./images/X_1.svg" class="icon-nav"></button>
+                            <div class="user-login-all">
+                                <h5 class="txt-filtros">Inicio de sesión o Registro</h5>
+                                <button class="btn-google color-light txt-filtros"><img src="./images/flat-color-icons_google.svg" alt=""><p class="text-small">Acceder con Google</p></button>
+                                <button class="btn-google color-light"><img src="./images/akar-icons_facebook-fill.svg" alt=""><p class="text-small">Acceder con Google</p></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo-heart">
+                        <img src="./images/heart 1.svg" alt="icon-heart" class="icon-nav">
+                    </div>
+                    <div class="logo-car rigth-mar">
+                        <img src="./images/car-principal.svg" alt="icon-car" class="icon-nav">
+                    </div>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!------------------------- Searcher ------------------------->
+        <form>
+            <input type="text" placeholder="¿Qué producto estás buscando?" id="searcher">
+            <button id="btn"><img src="./images/search 1.svg" alt=""></button>
+        </form>
+
+        <!--------------------------Filter--------------------------------->
+        <div class="filter">
+            <div class="filter-flex">                
+                <div class="filter-title">                    
+                    <button class="btn color-light" onclick="filterbtn()"><img src="./images/icons8-filtro-vacío-50.png" alt="icon-filter" class="icon-filter">Filtros</button>                                           
+                </div>
+            </div>
+            <div class="direct-padre-div">            
+                <div class="container-m-filter hidden" id="Filtro">
+                    <div class="direct-X">
+                        <button class="icon-nav direction direction-x" onclick="filterbtn()"><img src="./images/X_1.svg" class="icon-nav"></button>
+                    </div>
+                    <p class="bold txt-filtros">Filtros</p>
+
+                    <div class="d-flex price-direct bttm-border txt-filtros">
+                        <p>Precio</p>
+                        <button onclick="priceBtn()"><img src="./images/Flecha.svg" class="icon-nav">
+                        </button>
+                    </div>
+
+                    <div id="price-id" class="hidden-one txt-filtros">
+                        <form action="#">
+                            <label for="lang"></label>
+                            <select name="languages" id="lang" class="select">
+                                <option value="0">De:</option>
+                                <option value="1">$3,900.00</option>
+                                <option value="2">$7,000.00</option>
+                                <option value="3">$10,000.00</option>                                  
+                            </select>                                
+                        </form>
+                    
+                        <form action="#">
+                            <label for="lang"></label>
+                            <select name="languages" id="lang" class="select">
+                                <option value="0">Hasta:</option>
+                                <option value="1">$7,000.00</option>
+                                <option value="2">$10,000.00</option>
+                                <option value="3">$20,000.00</option>                                  
+                            </select>                                
+                        </form>
+                    </div>                    
+                
+                    <div class="d-flex price-direct bttm-border txt-filtros">
+                        <p>Categorias</p>
+                        <button onclick="categoBtn()"><img src="./images/Flecha.svg" class="icon-nav">
+                        </button>
+                    </div>    
+                    <div id="catego-id" class="hidden-two txt-filtros">
+
+                                <div class="d-flex txt-filtros">
+                                    <img src="./images/square 3.svg" class="icon-nav mar-rigth"><p>Smart TV</p>
+                                </div>
+                                <div class="d-flex txt-filtros">
+                                    <img src="./images/square 3.svg" class="icon-nav mar-rigth"><p>Computadoras</p>
+                                </div>  
+                                <div class="d-flex txt-filtros">
+                                    <img src="./images/square 3.svg" class="icon-nav mar-rigth"><p>Celulares</p>
+                                </div>  
+                                <div class="d-flex txt-filtros">
+                                    <img src="./images/square 3.svg" class="icon-nav mar-rigth"><p>Tablets</p>
+                                </div>  
+                                <div class="d-flex txt-filtros">
+                                    <img src="./images/square 3.svg" class="icon-nav mar-rigth"><p>Gatgets</p>
+                                </div>  
+                                <div class="d-flex txt-filtros">
+                                    <img src="./images/square 3.svg" class="icon-nav mar-rigth"><p>Audio</p>
+                                </div>  
+                                <div class="d-flex txt-filtros">
+                                    <img src="./images/square 3.svg" class="icon-nav mar-rigth"><p>Gaming</p>
+                                </div>                          
+                                                    
+                        </div>
+                        
+                    <div class="d-flex price-direct bttm-border txt-filtros">
+                        <p>Dispositivo</p>
+                        <button onclick="dispoBtn()"><img src="./images/Flecha.svg" class="icon-nav">
+                        </button>
+                    </div>
+                    <div id="dispo-id" class="hidden-thre txt-filtros">
+                        <div class="d-flex txt-filtros">
+                            <img src="./images/square 3.svg" class="icon-nav mar-rigth"><p>Android</p>
+                        </div>  
+                        <div class="d-flex txt-filtros">
+                            <img src="./images/square 3.svg" class="icon-nav mar-rigth"><p>Apple</p>
+                        </div>  
+                    </div> 
+
+                    <div class="d-flex price-direct bttm-border txt-filtros">
+                        <p>RAM</p>
+                        <button onclick="ramBtn()"><img src="./images/Flecha.svg" class="icon-nav">
+                        </button>
+                    </div>
+                    <div id="ram-id" class="hidden-thre txt-filtros">
+                        <div class="d-flex txt-filtros">
+                            <img src="./images/square 3.svg" class="icon-nav mar-rigth"><p>12GB</p>
+                        </div>  
+                        <div class="d-flex txt-filtros">
+                            <img src="./images/square 3.svg" class="icon-nav mar-rigth"><p>8GB</p>
+                        </div>
+                        <div class="d-flex txt-filtros">
+                            <img src="./images/square 3.svg" class="icon-nav mar-rigth"><p>6GB</p>
+                        </div>  
+                        <div class="d-flex txt-filtros">
+                            <img src="./images/square 3.svg" class="icon-nav mar-rigth"><p>4GB</p>
+                        </div>  
+                    </div> 
+
+                </div>        
+            </div>
+        </div>
+        <!--------------------------- Card ------------------------>
+        <section>
+            <!------------- Card one -------------->
+            <div class="card-flex">
+                <div class="card">
+                    <div class="card-images">
+                        <div class="card-heart">
+                            <img src="./images/heart 1.svg" alt="icon-heart" class="icon-nav">
+                        </div>
+                        <div class="card-img">
+                            <img src="./images/image 1.jpg" alt="image" class="img-cel">
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="brand">
+                            <h5 class="color-light">SAMSUNG</h5>
+                            <a href="https://galaxy-s52.netlify.app/" class="bold color-dark">Galaxy S52</a>
+                        </div>
+                        <div class="price-car-flex">
+                            <div class="price">
+                                <p class="color-light">Precio:</p>
+                                <p class="bold color-dark">$3,900.00</p>
+                            </div>
+                            <div class="logo-car-one">
+                                <img src="./images/shopping-cart 3.svg" alt="icon-car" class="icon-nav">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------ Card two ---------->
+                <div class="card">
+                    <div class="card-images">
+                        <div class="card-heart">
+                            <img src="./images/heart 1.svg" alt="icon-heart" class="icon-nav">
+                        </div>
+                        <div class="card-img">
+                            <img src="./images/image 3.jpg" alt="image" class="img-cel">
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="brand">
+                            <h5 class="color-light">SAMSUNG</h5>
+                            <p class="bold color-dark">Galaxy A12</p>
+                        </div>
+                        <div class="price-car-flex">
+                            <div class="price">
+                                <p class="color-light">Precio:</p>
+                                <p class="bold color-dark">$3,900.00</p>
+                            </div>
+                            <div class="logo-car-one">
+                                <img src="./images/shopping-cart 3.svg" alt="icon-car" class="icon-nav">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------ Card three -------------->
+                <div class="card">
+                    <div class="card-images">
+                        <div class="card-heart">
+                            <img src="./images/heart 1.svg" alt="icon-heart" class="icon-nav">
+                        </div>
+                        <div class="card-img">
+                            <img src="./images/image 4.jpg" alt="image" class="img-cel">
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="brand">
+                            <h5 class="color-light">SAMSUNG</h5>
+                            <p class="bold color-dark">Galaxy A32 (128gb/8gb ram)</p>
+                        </div>
+                        <div class="price-car-flex">
+                            <div class="price">
+                                <p class="color-light">Precio:</p>
+                                <p class="bold color-dark">$3,900.00</p>
+                            </div>
+                            <div class="logo-car-one">
+                                <img src="./images/shopping-cart 3.svg" alt="icon-car" class="icon-nav">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!----------- Card four --------->
+                <div class="card">
+                    <div class="card-images">
+                        <div class="card-heart">
+                            <img src="./images/heart 1.svg" alt="icon-heart" class="icon-nav">
+                        </div>
+                        <div class="card-img">
+                            <img src="./images/image 13.jpg" alt="image" class="img-cel">
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="brand">
+                            <h5 class="color-light">SAMSUNG</h5>
+                            <p class="bold color-dark">Galaxy A01</p>
+                        </div>
+                        <div class="price-car-flex">
+                            <div class="price">
+                                <p class="color-light">Precio:</p>
+                                <p class="bold color-dark">$4,500.00</p>
+                            </div>
+                            <div class="logo-car-one">
+                                <img src="./images/shopping-cart 3.svg" alt="icon-car" class="icon-nav">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------ Card five ---------->
+                <div class="card">
+                    <div class="card-images">
+                        <div class="card-heart">
+                            <img src="./images/heart 1.svg" alt="icon-heart" class="icon-nav">
+                        </div>
+                        <div class="card-img">
+                            <img src="./images/image 14.jpg" alt="image" class="img-cel">
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="brand">
+                            <h5 class="color-light">SAMSUNG</h5>
+                            <p class="bold color-dark">Galaxy A70</p>
+                        </div>
+                        <div class="price-car-flex">
+                            <div class="price">
+                                <p class="color-light">Precio:</p>
+                                <p class="bold color-dark">$5,300.00</p>
+                            </div>
+                            <div class="logo-car-one">
+                                <img src="./images/shopping-cart 3.svg" alt="icon-car" class="icon-nav">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------ Card six ---------->
+                <div class="card">
+                    <div class="card-images">
+                        <div class="card-heart">
+                            <img src="./images/heart 1.svg" alt="icon-heart" class="icon-nav">
+                        </div>
+                        <div class="card-img">
+                            <img src="./images/image 15.jpg" alt="image" class="img-cel">
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="brand">
+                            <h5 class="color-light">SAMSUNG</h5>
+                            <p class="bold color-dark">Galaxy Z fold 3</p>
+                        </div>
+                        <div class="price-car-flex">
+                            <div class="price">
+                                <p class="color-light">Precio:</p>
+                                <p class="bold color-dark">$19,800.00</p>
+                            </div>
+                            <div class="logo-car-one">
+                                <img src="./images/shopping-cart 3.svg" alt="icon-car" class="icon-nav">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------ Card seven ---------->
+                <div class="card">
+                    <div class="card-images">
+                        <div class="card-heart">
+                            <img src="./images/heart 1.svg" alt="icon-heart" class="icon-nav">
+                        </div>
+                        <div class="card-img">
+                            <img src="./images/image 16.jpg" alt="image" class="img-cel">
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="brand">
+                            <h5 class="color-light">SAMSUNG</h5>
+                            <p class="bold color-dark">Galaxy S21</p>
+                        </div>
+                        <div class="price-car-flex">
+                            <div class="price">
+                                <p class="color-light">Precio:</p>
+                                <p class="bold color-dark">$16,500.00</p>
+                            </div>
+                            <div class="logo-car-one">
+                                <img src="./images/shopping-cart 3.svg" alt="icon-car" class="icon-nav">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <script src="./script.js/Filter-btn.js"></script>
+</body>
+</html>

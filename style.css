@@ -1,0 +1,347 @@
+/********************** Universal ********************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html { 
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Yantramanav', sans-serif;
+}
+  
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: medium;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.h1-small {
+    font-size: 20px;
+}
+
+.padding-box {
+    padding: 1.5rem 0rem;
+}
+
+.icon-nav{
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+.color-light {
+    color: #c7c7c7;
+}
+
+.salm-color{
+    color: #F85555;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.txt-filtros{    
+    margin-bottom: 1rem;
+}
+
+.mar-rigth{
+    margin-right: 1rem;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+
+.left-mar{
+    margin-left: 1.5rem;
+}
+
+.rigth-mar{
+    margin-right: 1.5rem;
+}
+
+.d-flex{
+    display:flex;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.text-a-left {
+    text-align: left;
+}
+
+.hidden{
+    display: none;    
+}
+
+.hidden-one{
+    display: none;    
+}
+
+.hidden-two{
+    display: none;    
+}
+
+.hidden-thre{
+    display: none;    
+}
+
+.hidden-four {
+    display: none;
+}
+
+.padding-05 {
+    padding: 0.5rem 0;
+}
+
+.text-small {
+    font-size: 13px;
+}
+
+.hidden-five {
+    display: none;
+}
+
+/**************************** Main ***********************/
+
+main {
+    margin: 1.5rem 1.5rem;
+}
+/************************** Nav ************************/
+
+nav {
+    padding: .5rem 0rem;    
+}
+
+.menu-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 76%;
+    box-shadow: 5px 0px 5px #4f4f4f38;
+    background-color: #fff;
+}
+
+.nav-flex {
+    height: 3rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    
+}
+
+.nav-title h1{
+    padding-bottom: .6rem;
+    color: #F85555;
+}
+
+.container-title{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.menu-all {
+    padding: 1rem 1rem 4rem 1rem;
+    text-align: right;
+}
+
+.container-icon{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+
+.user-login {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 5%;
+    padding: 1rem 1rem 5rem 1rem;
+    text-align: right;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px #4f4f4f38;
+}
+
+.user-login-all {
+    padding-top: 1rem;
+    text-align: left;
+}
+
+.btn-google {
+    width: 97%;
+    display: flex;
+    align-items: center;
+    background: white;
+    justify-content: center;
+    border: 1px solid #DCD9D9;
+    padding: .5rem 0rem;
+    gap: .5rem;
+}
+
+/*********************** Searcher **************************/
+
+form {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+#searcher {
+    width: 100%;
+    border: 1px solid #c7c7c7;
+    padding-left: .6rem;
+    height: 2.9rem;
+}
+
+#btn {
+    border: 0;
+    margin-left: -5px;
+    background-color: #F85555;
+    width: 3rem;
+    height: 2.9rem;
+}
+
+#btn img {
+    height: 20px;
+}
+
+/************************** Filter ************************/
+
+.filter-flex {
+    display: flex;
+    justify-content: end;
+    gap: .3rem;
+    padding: 1rem 0rem;
+}
+
+.bttm-border{
+    border-bottom: 2px solid #DCD9D9;
+}
+
+.direct-X{
+    text-align: right;
+}
+
+.filter-title {
+    color: #C7C7C7;
+}
+
+.icon-filter {
+    height: 1rem;
+}
+
+.btn{
+    background-color: transparent;
+    border: none;    
+}
+
+.direct-padre-div{
+    position: relative;
+}
+
+.container-m-filter{
+    padding: 1rem;
+    position: absolute;
+    width: 90%;
+    right: 0;
+    background-color: white;
+    box-shadow: -5px 0px 5px #4f4f4f38;
+}
+
+.price-direct{
+    justify-content: space-between;
+}
+
+.select{
+    width: 100%;
+    margin-top: 1rem;
+    border: 1px solid #DCD9D9;
+    border-radius: 4px;
+    padding: .5rem;
+}
+
+/********************************* Card *********************************/
+
+.card-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid #c7c7c7;
+    border-radius: 4px;
+    width: 16.875rem;
+}
+
+.card-info {
+    border-top: 1px solid #c7c7c7;
+    padding: 1rem 2rem 1rem 1rem;
+}
+
+.card-heart {
+    display: flex;
+    justify-content: end;
+    padding: 1rem;
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;    
+    overflow: hidden;
+}
+
+.img-cel {
+    width: 15rem;    
+}
+
+.price-car-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0rem;
+}
+
+.logo-car-one {
+    background: #F85555;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

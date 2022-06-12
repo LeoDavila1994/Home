@@ -1,0 +1,49 @@
+@media (min-width: 768px){
+
+    .logo-one{
+        display: none;
+    }
+
+    .h1-small {
+        font-size: 35px;
+    }
+    
+    .icon-nav{
+        height: 2rem;        
+    }
+
+    header {       
+        border-bottom: 2px solid #dcd9d9;
+        margin-bottom: 3rem;
+    }
+
+    nav {
+        padding: 0;        
+    }
+
+    .nav-flex {
+        height: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;        
+    }
+
+    .logo-user, .logo-heart, .logo-car{       
+        border-left: 2px solid #dcd9d9;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-right: 2rem;
+        padding-left: 3rem;
+        
+    } 
+    
+    .rigth-mar{
+        margin-right: 0;
+    }
+
+    .left-mar-title{
+        margin-left: 1rem;
+    }
+}
