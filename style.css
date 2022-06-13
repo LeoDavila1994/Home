@@ -129,6 +129,37 @@ a {
     display: none;
 }
 
+.d-grid {
+    display: grid;
+    grid-template-columns: 75px 5fr 1fr;
+    grid-template-rows: repeat(3, 30px);
+    gap: .2rem;
+    padding: 1rem 0rem;
+}
+
+.img-cel-mini img{
+    height: 4.5rem;
+}
+
+.text-small-car {
+    font-size: 10px;
+}
+
+.price-total {
+    font-size: 16px;
+    color: #4F4F4F;
+    padding-left: 4rem; 
+}
+
+.hidden-eight {
+    display: none;
+}
+
+.text-big {
+    font-size: 18px;
+    color: #4F4F4F;
+}
+
 /**************************** Main ***********************/
 
 main {
@@ -207,6 +238,45 @@ nav {
     border: 1px solid #DCD9D9;
     padding: .5rem 0rem;
     gap: .5rem;
+}
+
+.car {
+    right: 0;
+    width: 15rem;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 15;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: -3px 0px 5px #4f4f4f38;
+}
+
+.car-btn-x {
+    text-align: right;
+}
+
+.car-count {
+    grid-column: 2/2;
+    position: relative;
+}
+
+#count {
+    width: 80%;
+    padding-left: 2rem;
+    position: absolute;
+    left: 0;
+    border: 1px solid #DCD9D9;
+    background: transparent;
+    padding-bottom: .65rem;
+}
+
+.btn-pay button{
+    margin-top: 2rem;
+    color: #fff;
+    background-color: #F85555;
+    width: 100%;
+    padding: .5rem;
 }
 
 /*********************** Searcher **************************/

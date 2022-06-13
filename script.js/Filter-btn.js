@@ -32,3 +32,8 @@ function loginBtn() {
     const x = document.getElementById("user-login");
     x.classList.toggle("hidden-five");
 }
+
+function carBtn() {
+    const x = document.getElementById("car-list");
+    x.classList.toggle("hidden-eight");
+}
