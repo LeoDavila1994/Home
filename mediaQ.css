@@ -46,4 +46,104 @@
     .left-mar-title{
         margin-left: 1rem;
     }
+
+    .card-flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+        margin-left: 20%;
+    }
+
+    #searcher {
+        width: 43%;
+        border: 1px solid #c7c7c7;
+        padding-left: .6rem;
+        height: 2.9rem;
+    }
+
+    .serching {
+        width: 136%;
+    }
+
+    .model-cel {
+        display: block;
+        margin-left: 16%;
+    }
+
+    #btn {
+        border: 0;
+        margin-left: -5px;
+        background-color: #ffffff;
+        width: 3rem;
+        height: 2.9rem;
+        border: 1px solid #c7c7c7;
+        
+    }
+
+    .filter-title {
+        display: none;
+        color: #C7C7C7;
+    }
+    .filter-flex {
+        display: flex;
+        justify-content: left;
+        gap: .3rem;
+        padding: 1rem 0rem;
+    }
+
+    .container-m-filter{
+        padding: 1rem;
+        position: absolute;
+        width: 22%;
+        left: 0;
+        background-color: white;
+        box-shadow: 0 0 0;
+    }
+
+    .container-m-filter{
+        padding: 1rem;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0;
+        
+    }
+    .user-login {
+        position: absolute;
+        right: 41%;
+        left: 36%;
+        top: 9%;
+        padding: 1rem 1rem 5rem 1rem;
+        text-align: right;
+        background-color: #fff;
+        box-shadow: 0px 2px 5px #4f4f4f38;
+    }
+
+    .conteiner-searcher{
+        display: grid;
+        grid-template-columns: 50px 2fr 1fr;
+        width: 100%;
+        margin: auto;
+    
+    }
+
+    .searcher-mq {
+        display: block;
+        width: 70%;
+        padding: 1rem 2rem;
+        border-color: #dcd9d9;
+    }
+
+    .home{
+        display: block;
+
+    }
+
+    .hidden{
+        display: block;    
+    }
+
+    .displayNone {
+        display: none;
+    }
 }

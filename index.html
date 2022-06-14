@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="./mediaQ.css">
 </head>
 <body>
-    <!--------------------- Nav --------------------->
-    <header>
+     <!--------------------- Nav --------------------->
+     <header>
         <nav>
             <div class="nav-flex">
 
@@ -52,7 +52,48 @@
                         <img src="./images/heart 1.svg" alt="icon-heart" class="icon-nav">
                     </div>
                     <div class="logo-car rigth-mar">
-                        <img src="./images/car-principal.svg" alt="icon-car" class="icon-nav">
+                        <button class="icon-nav direction direction-x" onclick="carBtn()"><img src="./images/car-principal.svg" alt="icon-car" class="icon-nav"></button>
+                        <div class="car hidden-eight" id="car-list">        
+                            <div class="car-btn-x">
+                                <button class="icon-nav direction direction-x" onclick="carBtn()"><img src="./images/X_1.svg" class="icon-nav"></button>
+                            </div>
+                            <div class="car-all">
+                                <div class="car-title">
+                                    <h5 class="text-big">Carrito de compras</h5>
+                                </div>
+                            </div>
+                            <div class="car-info">
+                                <div class="car-grid d-grid">
+                                    <div class="img-cel-mini">
+                                        <img src="./images/image 1.jpg" alt="">
+                                    </div>
+                                    <div class="car-text">
+                                        <p class="text-small-car color-light">SAMSUNG</p>
+                                        <p class="bold text-small padding-01">Galaxy A32</p>
+                                    </div>
+                                    <div class="car-bin">
+                                        <a href=""><img src="./images/papeleria.svg" alt="" class="icon-nav"></a>
+                                    </div>
+                                    <div class="car-count padding-05">
+                                        <form action="#">
+                                            <label for="lang"></label>
+                                            <select name="languages" id="count" class="select bold">
+                                                <option value="0">1</option>
+                                                <option value="1">2</option>
+                                                <option value="2">3</option>
+                                                <option value="3">4</option>                                  
+                                            </select>                                
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="car-price">
+                                    <p class="color-light text-small">Total <span class="price-total bold">$5,200.00</span></p>
+                                </div>
+                                <div class="btn-pay">
+                                    <button>Proceder al pago</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -62,11 +103,26 @@
     </header>
     <main>
         <!------------------------- Searcher ------------------------->
-        <form>
+        <div class="conteiner-searcher">
+
+            <p class="home">Home</p>
+
+        <form class="serching">
             <input type="text" placeholder="¿Qué producto estás buscando?" id="searcher">
             <button id="btn"><img src="./images/search 1.svg" alt=""></button>
         </form>
 
+
+            <form class= "model-cel" action="#">
+                <label for="lang"></label>
+                <select name="languages" class = searcher-mq>
+                    <option value="0">Samsung</option>
+                    <option value="1">Huawei</option>
+                    <option value="2">Xiaomi</option>
+                    <option value="3">Pixel</option>                                  
+                </select>                                
+            </form>
+        </div>
         <!--------------------------Filter--------------------------------->
         <div class="filter">
             <div class="filter-flex">                
@@ -79,7 +135,7 @@
                     <div class="direct-X">
                         <button class="icon-nav direction direction-x" onclick="filterbtn()"><img src="./images/X_1.svg" class="icon-nav"></button>
                     </div>
-                    <p class="bold txt-filtros">Filtros</p>
+                    <p class="displayNone bold txt-filtros">Filtros</p>
 
                     <div class="d-flex price-direct bttm-border txt-filtros">
                         <p>Precio</p>
@@ -193,7 +249,7 @@
                     <div class="card-info">
                         <div class="brand">
                             <h5 class="color-light">SAMSUNG</h5>
-                            <a href="https://galaxy-s52.netlify.app/" class="bold color-dark">Galaxy S52</a>
+                            <a class="bold color-dark">Galaxy S52</a>
                         </div>
                         <div class="price-car-flex">
                             <div class="price">
