@@ -108,6 +108,10 @@
         box-shadow: 0;
         
     }
+
+    .gr {
+        border: 0;
+    }
     .user-login {
         position: absolute;
         right: 41%;
