@@ -95,19 +95,11 @@
     .container-m-filter{
         padding: 1rem;
         position: absolute;
-        width: 22%;
+        width: 20%;
         left: 0;
         background-color: white;
         box-shadow: 0 0 0;
-    }
-
-    .container-m-filter{
-        padding: 1rem;
-        position: absolute;
-        background-color: white;
-        box-shadow: 0;
-        
-    }
+    }   
 
     .user-login {
         position: absolute;
@@ -146,5 +138,11 @@
 
     .displayNone {
         display: none;
+    }
+
+    .cel-gordo{
+        width: 6rem;
+        height: 5rem;
+        margin-bottom: 2rem;
     }
 }

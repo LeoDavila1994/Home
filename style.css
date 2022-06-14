@@ -283,7 +283,7 @@ nav {
 .car {
     right: 0;
     width: 15rem;
-    height: 100vh;
+    height: auto;
     position: absolute;
     top: 0;
     z-index: 15;
@@ -428,7 +428,7 @@ nav {
 .card {
     border: 1px solid #c7c7c7;
     border-radius: 4px;
-    width: 16.875rem;
+    width: 16.875rem;  
 }
 
 .card-info {
@@ -450,7 +450,8 @@ nav {
 }
 
 .img-cel {
-    width: 15rem;    
+    width: 10rem;
+    height: 7rem;    
 }
 
 .price-car-flex {
