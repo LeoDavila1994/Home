@@ -66,36 +66,13 @@
                             </div>
                             <!-- Genear html a partir de aqui -->
                             <div class="car-info" id="carritoC">
-                                <!-- <div class="car-grid d-grid">
-                                    <div class="img-cel-mini">
-                                        <img src="./images/image 1.jpg" alt="">
-                                    </div>
-                                    <div class="car-text">
-                                        <p class="text-small-car color-light">SAMSUNG</p>
-                                        <p class="bold text-small padding-01">Galaxy A32</p>
-                                    </div>
-                                    <div class="car-bin">
-                                        <a href=""><img src="./images/papeleria.svg" alt="" class="icon-nav"></a>
-                                    </div>
-                                    <div class="car-count padding-05">
-                                        <form action="#">
-                                            <label for="lang"></label>
-                                            <select name="languages" id="count" class="select bold">
-                                                <option value="0">1</option>
-                                                <option value="1">2</option>
-                                                <option value="2">3</option>
-                                                <option value="3">4</option>                                  
-                                            </select>                                
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="car-price">
-                                    <p class="color-light text-small">Total <span class="price-total bold">$5,200.00</span></p>
-                                </div> -->
-                            </div>  
+                            </div>
                             <!-- Genear html hasta aqui -->
                             <div class="btn-pay">
-                                <button>Proceder al pago</button>
+                                <button id="buy" onclick="deleteOne()">Comprar</button>
+                            </div>
+                            <div class="price-total" id="price-total">
+                                
                             </div>
                             
                         </div>
@@ -244,7 +221,7 @@
         <section>
             <!------------- Card one -------------->
             <div class="card-flex">
-                <div class="card">
+                <div class="card" id="cardd">
                     <div class="card-images">
                         <div class="card-heart">
                             <img src="./images/heart 1.svg" alt="icon-heart" class="icon-nav">
@@ -261,11 +238,15 @@
                         <div class="price-car-flex">
                             <div class="price">
                                 <p class="color-light">Precio:</p>
-                                <p class="bold color-dark">$3,900.00</p>
+                                <p class="bold color-dark">$5,200.00</p>
                             </div>
-                            <button class="logo-car-one" id="1" value="1" onclick="productOne()">
-                                <img src="./images/shopping-cart 3.svg" alt="icon-car" class="icon-nav">
-                            </button>
+                            <div id="btn-1">
+                                <form action="" onsubmit="event.preventDefault()">
+                                    <button class="logo-car-one" id="producto" value="1" onclick="productOne()">
+                                        <img src="./images/shopping-cart 3.svg" alt="icon-car" class="icon-nav">
+                                    </button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -289,9 +270,13 @@
                                 <p class="color-light">Precio:</p>
                                 <p class="bold color-dark">$3,900.00</p>
                             </div>
-                            <button class="logo-car-one" id="2" value="2" onclick="productTwo()">
-                                <img src="./images/shopping-cart 3.svg" alt="icon-car" class="icon-nav">
-                            </button>
+                            <div id="btn-2">
+                                <form action="" onsubmit="event.preventDefault()">
+                                    <button class="logo-car-one" id="product2" value="2" onclick="productTwo()">
+                                        <img src="./images/shopping-cart 3.svg" alt="icon-car" class="icon-nav">
+                                    </button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -313,11 +298,15 @@
                         <div class="price-car-flex">
                             <div class="price">
                                 <p class="color-light">Precio:</p>
-                                <p class="bold color-dark">$3,900.00</p>
+                                <p class="bold color-dark">$7,000.00</p>
                             </div>
-                            <button class="logo-car-one" id="3">
-                                <img src="./images/shopping-cart 3.svg" alt="icon-car" class="icon-nav">
-                            </button>
+                            <div>
+                                <form action="" onsubmit="event.preventDefault()">
+                                    <button class="logo-car-one" id="btn-3" value="3" onclick="productThree()">
+                                        <img src="./images/shopping-cart 3.svg" alt="icon-car" class="icon-nav">
+                                    </button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -341,8 +330,8 @@
                                 <p class="color-light">Precio:</p>
                                 <p class="bold color-dark">$4,500.00</p>
                             </div>
-                            <button class="logo-car-one" id="4">
-                                <img src="./images/shopping-cart 3.svg" alt="icon-car" class="icon-nav">
+                            <button class="logo-car-one" id="btn-4" value="4">
+                                <img src="./images/shopping-cart 3.svg" alt="icon-car" class="icon-nav" onclick="productFour()">
                             </button>
                         </div>
                     </div>
@@ -367,8 +356,8 @@
                                 <p class="color-light">Precio:</p>
                                 <p class="bold color-dark">$5,300.00</p>
                             </div>
-                            <button class="logo-car-one" id="5">
-                                <img src="./images/shopping-cart 3.svg" alt="icon-car" class="icon-nav">
+                            <button class="logo-car-one" id="btn-5" value="5">
+                                <img src="./images/shopping-cart 3.svg" alt="icon-car" class="icon-nav" onclick="productFive()">
                             </button>
                         </div>
                     </div>
@@ -393,8 +382,8 @@
                                 <p class="color-light">Precio:</p>
                                 <p class="bold color-dark">$19,800.00</p>
                             </div>
-                            <button class="logo-car-one" id="6">
-                                <img src="./images/shopping-cart 3.svg" alt="icon-car" class="icon-nav">
+                            <button class="logo-car-one" id="btn-6" value="6">
+                                <img src="./images/shopping-cart 3.svg" alt="icon-car" class="icon-nav" onclick="productSix()">
                             </button>
                         </div>
                     </div>
@@ -419,14 +408,18 @@
                                 <p class="color-light">Precio:</p>
                                 <p class="bold color-dark">$16,500.00</p>
                             </div>
-                            <button class="logo-car-one" id="7">
-                                <img src="./images/shopping-cart 3.svg" alt="icon-car" class="icon-nav">
+                            <button class="logo-car-one" id="btn-7" value="7">
+                                <img src="./images/shopping-cart 3.svg" alt="icon-car" class="icon-nav" onclick="productSeven()">
                             </button>
                         </div>
                     </div>
                 </div>
         </section>
     </main>
+    <!---------------------------------------------- Footer ------------------------------------------------>
+    <footer class="frase">
+        <p class="margin-footer">Hecho por Pedro A, Leonardo D & Edwin E con ❤️<br></p>
+    </footer>
     <script src="./script.js/Filter-btn.js"></script>
 </body>
 </html>

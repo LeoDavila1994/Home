@@ -165,6 +165,46 @@ a {
     color: #4F4F4F;
 }
 
+
+.hidden-nine {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-blockOne {
+    display: block;
+}
+
+.hidden-ten {
+    display: none;
+}
+
+.hidden-eleven {
+    display: none;
+}
+
+.hidden-twelve {
+    display: none;
+}
+
+.hidden-price {
+    display: none;
+}
+
+.d-block-price {
+    display: block;
+}
+
+.hidden-thirteen {
+    display: none;
+}
+
+.hidden-fourteen {
+    display: none;
+}
 /**************************** Main ***********************/
 
 main {
@@ -205,6 +245,11 @@ main {
     width: 100%;
     padding: .5rem;
 }
+
+.d-block {
+    display: block;
+}
+
 /************************** Nav ************************/
 
 nav {
@@ -471,3 +516,17 @@ nav {
     align-items: center;
 }
 
+/********************************* Footer *********************************/
+
+footer {
+    background: #000;
+    padding: 1.5rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frase {
+    color: white;
+    text-align: center;
+}
