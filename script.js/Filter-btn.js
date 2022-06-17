@@ -50,7 +50,9 @@ let cel = [
 
 
 
+
 function generateCardCars(celArray) {    
+
     let html = '';
     for(let i = 0; i < celArray.length; i++) {
         html += `<div class="car-grid d-grid" id="product1">
@@ -61,7 +63,9 @@ function generateCardCars(celArray) {
                         <p class="text-small-car color-light">${celArray[i].brand}</p>
                         <p class="bold text-small padding-01">${celArray[i].model}</p>
                     </div>
+
                     
+
                     <div class="car-count padding-05">
                         <form action="#">
                             <label for="lang"></label>
@@ -83,6 +87,7 @@ function generateCardCars(celArray) {
 }
 
 function countTotal(result) {
+
     let total = 0;
     let html="";
     for(let i = 0; i < result.length; i++) {
@@ -101,7 +106,9 @@ let result = [];
 
 function total(arraySum) {
     for(let i = 0; i < arraySum.length; i++) {
+
         
+
     }
 }
 
@@ -154,7 +161,9 @@ function c(element) {
 function productFour() {
     let er = addProduct(cel, d);
     generateCardCars(er)
+
     countTotal(er)
+
 }
 
 function d(element) {
@@ -166,7 +175,9 @@ function d(element) {
 function productFive() {
     let er = addProduct(cel, e);
     generateCardCars(er)
+
     countTotal(er)
+
 }
 
 function e(element) {
@@ -179,6 +190,7 @@ function productSix() {
     let er = addProduct(cel, f);
     generateCardCars(er)
     countTotal(er)
+
 }
 
 function f(element) {
@@ -190,7 +202,9 @@ function f(element) {
 function productSeven() {
     let er = addProduct(cel, g);
     generateCardCars(er)
+
     countTotal(er)
+
 }
 
 function g(element) {
@@ -213,8 +227,11 @@ function deleteProduct(arrayCel,cb) {
             result.pop()
             result.pop()
     }
+
     alert("GRACIAS POR TU COMPRA!!!")
     
+
+
 }
     return result;
 }
